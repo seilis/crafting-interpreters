@@ -1,12 +1,24 @@
-.PHONY: all run
+SOURCES = \
+	com/craftinginterpreters/lox/Lox.java \
+	com/craftinginterpreters/lox/Scanner.java \
+	com/craftinginterpreters/lox/Token.java \
+	com/craftinginterpreters/lox/TokenType.java \
+	com/craftinginterpreters/lox/jlox.java
 
-all: src/jlox.class
+CLASSES = $(patsubst com/craftinginterpreters/lox/%.java,com/craftinginterpreters/lox/%.class,$(SOURCES))
+
+.PHONY: all run clean
+
+all: $(CLASSES)
 
 run: all
-	@java --class-path src jlox
+	@java --class-path com/craftinginterpreters/lox jlox
 
 clean:
-	rm -rf src/*.class
+	rm -rf com/craftinginterpreters/lox/*.class
 
-src/jlox.class: src/main.java
-	javac src/main.java
+# How to compile java
+com/craftinginterpreters/lox/%.class : com/craftinginterpreters/lox/%.java
+	javac -d com/craftinginterpreters/lox $<
+
+$(CLASSES) : $(SOURCES)
