@@ -4,8 +4,10 @@ CLASSPATH = com/craftinginterpreters
 SOURCES = \
 	$(CLASSPATH)/lox/AstPrinter.java \
 	$(CLASSPATH)/lox/Expr.java \
+	$(CLASSPATH)/lox/Interpreter.java \
 	$(CLASSPATH)/lox/Lox.java \
 	$(CLASSPATH)/lox/Parser.java \
+	$(CLASSPATH)/lox/RuntimeError.java \
 	$(CLASSPATH)/lox/Scanner.java \
 	$(CLASSPATH)/lox/Token.java \
 	$(CLASSPATH)/lox/TokenType.java
