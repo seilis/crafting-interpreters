@@ -1,8 +1,11 @@
 # Class path
 CLASSPATH = com/craftinginterpreters
 
+# Removed from sources because it's no longer used by the book
+#	$(CLASSPATH)/lox/AstPrinter.java
+
 SOURCES = \
-	$(CLASSPATH)/lox/AstPrinter.java \
+	$(CLASSPATH)/lox/Environment.java \
 	$(CLASSPATH)/lox/Expr.java \
 	$(CLASSPATH)/lox/Interpreter.java \
 	$(CLASSPATH)/lox/Lox.java \
