@@ -9,7 +9,10 @@ SOURCES = \
 	$(CLASSPATH)/lox/Expr.java \
 	$(CLASSPATH)/lox/Interpreter.java \
 	$(CLASSPATH)/lox/Lox.java \
+	$(CLASSPATH)/lox/LoxCallable.java \
+	$(CLASSPATH)/lox/LoxFunction.java \
 	$(CLASSPATH)/lox/Parser.java \
+	$(CLASSPATH)/lox/Return.java \
 	$(CLASSPATH)/lox/RuntimeError.java \
 	$(CLASSPATH)/lox/Scanner.java \
 	$(CLASSPATH)/lox/Stmt.java \
@@ -25,6 +28,9 @@ all: $(CLASSES)
 
 run: all
 	@java $(CLASSPATH)/lox/Lox
+
+run-test: all
+	@java $(CLASSPATH)/lox/Lox test.lox
 
 run-ast: $(CLASSPATH)/lox/Expr.java
 
