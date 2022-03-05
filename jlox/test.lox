@@ -23,5 +23,22 @@ class A {
     }
 }
 
-a = A("A-class");
+var a = A("A-class");
 a.printthing();
+
+class B < A {
+    init(thing, otherthing) {
+        super.init(thing);
+        this.otherthing = otherthing;
+    }
+
+    printboth() {
+        print "printing two things";
+        super.printthing();
+        print this.otherthing;
+        print "done printing things";
+    }
+}
+
+var b = B("b-class", "other");
+b.printboth();
