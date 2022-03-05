@@ -12,3 +12,16 @@ fun printthing(x) {
 }
 
 printthing("hello");
+
+class A {
+    init(thing) {
+        this.thing = thing;
+    }
+
+    printthing() {
+        print "inclass " + this.thing;
+    }
+}
+
+a = A("A-class");
+a.printthing();

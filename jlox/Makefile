@@ -10,7 +10,9 @@ SOURCES = \
 	$(CLASSPATH)/lox/Interpreter.java \
 	$(CLASSPATH)/lox/Lox.java \
 	$(CLASSPATH)/lox/LoxCallable.java \
+	$(CLASSPATH)/lox/LoxClass.java \
 	$(CLASSPATH)/lox/LoxFunction.java \
+	$(CLASSPATH)/lox/LoxInstance.java \
 	$(CLASSPATH)/lox/Parser.java \
 	$(CLASSPATH)/lox/Resolver.java \
 	$(CLASSPATH)/lox/Return.java \
