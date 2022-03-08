@@ -1,3 +1,8 @@
+# Jlox ignores
 *.class
 /jlox/com/craftinginterpreters/lox/Expr*.java
 /jlox/com/craftinginterpreters/lox/Stmt*.java
+
+# Clox ignores
+*.o
+clox/lox
