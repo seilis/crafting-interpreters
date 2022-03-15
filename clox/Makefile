@@ -1,8 +1,10 @@
 SOURCES = \
 	src/chunk.c \
+	src/compiler.c \
 	src/debug.c \
 	src/main.c \
 	src/memory.c \
+	src/scanner.c \
 	src/value.c \
 	src/vm.c
 
